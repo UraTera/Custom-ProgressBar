@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressBarCircle">
+
+        <attr name="circleStroke" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="value" format="integer" />
+        <attr name="showPercent" format="boolean" />
+
+        <attr name="dashWidth" format="dimension" />
+        <attr name="dashHeight" format="dimension" />
+        <attr name="dashRadius" format="dimension" />
+        <attr name="dashColorActive" format="color" />
+        <attr name="dashColorInactive" format="color" />
+
+        <attr name="text" format="string" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="fontFamily" format="string" />
+
+    </declare-styleable>
+</resources>
