@@ -1,7 +1,8 @@
 ### Example of creating a circular ProgressBar. 
 Using NumberPicker to set the time.
 
-![ProgressBar](https://github.com/user-attachments/assets/6bbc2359-a544-44b4-ad95-1c20e3105b0b)
+![ProgressBar](https://github.com/user-attachments/assets/085ccc70-109a-4082-ae10-289a8d88634e)
+
 
 ### Attributes
 |Attributes |Description| Related method(s)|Default value|
