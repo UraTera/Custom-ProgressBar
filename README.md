@@ -39,23 +39,28 @@ pbc_warningShow      |Show color warnings |false
 pbc_warningValue1    |First warning value, %|80
 pbc_warningValue2    |The second value of warning, %|90
 
-**Styles of blur**
+**Styles of blur:**
 - normal
 - solid
 
-**Styles of gradient**
+**Styles of gradient:**
 - sweep
 - radial
 
-**Styles of progress**
+**Styles of progress:**
 - dash
 - arc
 - solid
 
-Usage:
+**Usage:**
 ```
 <com.tera.progressbar.ProgressBarCircle
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"/>
 ```
+
+**Methods:**
+
+setValueMax, getValueMax, setValue, getValue, setText, setProgressColor, setGroundColor, setFontFamily.
+
 
