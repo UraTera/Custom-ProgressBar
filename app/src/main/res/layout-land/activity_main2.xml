@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:id="@+id/lineProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/lineBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.tera.custom_progressbar.ProgressBarCircle
+            android:id="@+id/pb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_L"
+            app:pbc_percentShow="false"
+            app:pbc_value="15"
+            app:pbc_warningShow="false" />
+
+        <com.tera.custom_progressbar.ProgressBarCircle
+            android:id="@+id/pb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_L"
+            app:pbc_arcEndColor="#023B5F"
+            app:pbc_progressColor="@color/blue"
+            app:pbc_progressStyle="arc"
+            app:pbc_value="38" />
+
+        <com.tera.custom_progressbar.ProgressBarCircle
+            android:id="@+id/pb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_L"
+            app:pbc_arcEndColor="@color/green_700"
+            app:pbc_progressColor="@color/yellow"
+            app:pbc_progressStyle="solid"
+            app:pbc_value="15" />
+
+        <com.tera.custom_progressbar.ProgressBarCircle
+            android:id="@+id/pb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_L"
+            app:pbc_arcBlurStyle="normal"
+            app:pbc_arcBlurWidth="0dp"
+            app:pbc_arcRoundShow="true"
+            app:pbc_arcEndColor="@color/red"
+            app:pbc_arcGroundWidth="6dp"
+            app:pbc_arcProgressWidth="15dp"
+            app:pbc_progressColor="@color/blue_700"
+            app:pbc_progressStyle="arc"
+            app:pbc_value="30" />
+
+        <com.tera.custom_progressbar.ProgressBarCircle
+            android:id="@+id/pb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_L"
+            app:pbc_arcEndColor="#6F98E0"
+            app:pbc_arcGradientStyle="radial"
+            app:pbc_groundColor="#AFDBF0"
+            app:pbc_progressColor="#A9D3EF"
+            app:pbc_progressStyle="solid"
+            app:pbc_value="35"
+            app:pbc_warningShow="true" />
+
+        <com.tera.custom_progressbar.ProgressBarCircle
+            android:id="@+id/pb6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_L"
+            app:pbc_arcBlurWidth="8dp"
+            app:pbc_arcEndColor="#510264"
+            app:pbc_arcProgressWidth="14dp"
+            app:pbc_groundColor="#EFB7B7"
+            app:pbc_progressColor="#D05FE9"
+            app:pbc_progressStyle="arc"
+            app:pbc_arcBlurStyle="normal"
+            app:pbc_value="35"
+            app:pbc_warningShow="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/_0"
+            android:textSize="20sp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/slProgress"
+            style="@style/Widget.Material3.Slider.Legacy"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="59"
+            app:labelBehavior="gone"
+            app:thumbColor="@color/blue_700"
+            app:trackColorActive="@color/blue"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/bnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/ic_arrow_back"
+                tools:ignore="ContentDescription,RelativeOverlap,SpeakableTextPresentCheck" />
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="50dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/bnTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_time"
+                tools:ignore="ContentDescription,RelativeOverlap,SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

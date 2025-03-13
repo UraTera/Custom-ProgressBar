@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name" translatable="false">ProgressBar</string>
+
+    <string name="max_value">Maximum value</string>
+    <string name="progress">Progress</string>
+    <string name="setting">Installed:</string>
+    <string name="normal">Normal:</string>
+    <string name="bold">Bold</string>
+
+    <!-- Fragment -->
+    <string name="hour">Hour</string>
+    <string name="min">Min</string>
+    <string name="sec">Sec</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok" translatable="false">OK</string>
+</resources>

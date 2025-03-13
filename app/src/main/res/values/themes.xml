@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CustomProgressBar" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Скрыть Статус бар -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.CustomProgressBar" parent="Base.Theme.CustomProgressBar" />
+
+    <dimen name="size_p">150dp</dimen>
+    <dimen name="margin_P">30dp</dimen>
+    <dimen name="margin_L">5dp</dimen>
+</resources>

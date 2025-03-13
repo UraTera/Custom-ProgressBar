@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ProgressBarCircle">
+
+        <attr name="pbc_arcBlurWidth" format="dimension"/>
+        <attr name="pbc_arcEndColor" format="color"/>
+        <attr name="pbc_arcGroundWidth" format="dimension"/>
+        <attr name="pbc_arcProgressWidth" format="dimension"/>
+        <attr name="pbc_arcRoundShow" format="boolean"/>
+
+        <attr name="pbc_circleStroke" format="dimension" />
+        <attr name="pbc_dashHeight" format="dimension" />
+        <attr name="pbc_dashRadius" format="dimension" />
+        <attr name="pbc_dashWidth" format="dimension" />
+        <attr name="pbc_fontFamily" format="string" />
+
+        <attr name="pbc_groundColor" format="color" />
+        <attr name="pbc_percentShow" format="boolean" />
+        <attr name="pbc_progressColor" format="color" />
+        <attr name="pbc_textColor" format="color" />
+        <attr name="pbc_textSize" format="dimension" />
+
+        <attr name="pbc_value" format="integer" />
+        <attr name="pbc_valueMax" format="integer" />
+
+        <attr name="pbc_warningColor1" format="color"/>
+        <attr name="pbc_warningColor2" format="color"/>
+        <attr name="pbc_warningShow" format="boolean"/>
+        <attr name="pbc_warningValue1" format="integer"/>
+        <attr name="pbc_warningValue2" format="integer"/>
+
+        <attr name="pbc_arcBlurStyle" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="solid" value="1"/>
+        </attr>
+
+        <attr name="pbc_arcGradientStyle" format="enum">
+            <enum name="sweep" value="0"/>
+            <enum name="radial" value="1"/>
+        </attr>
+
+        <attr name="pbc_progressStyle" format="enum">
+            <enum name="dash" value="0"/>
+            <enum name="arc" value="1"/>
+            <enum name="solid" value="2"/>
+        </attr>
+
+
+    </declare-styleable>
+
+</resources>

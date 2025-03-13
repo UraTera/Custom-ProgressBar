@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="max_value">Максимальное значение</string>
+    <string name="progress">Прогресс</string>
+    <string name="setting">Установлено:</string>
+    <string name="normal">Обычный:</string>
+    <string name="bold">Полужирный</string>
+
+    <!-- Fragment -->
+    <string name="hour">Час</string>
+    <string name="min">Мин</string>
+    <string name="sec">Сек</string>
+    <string name="cancel">Отмена</string>
+</resources>
