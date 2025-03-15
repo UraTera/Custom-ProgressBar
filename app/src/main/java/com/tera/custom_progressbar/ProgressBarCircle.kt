@@ -72,8 +72,6 @@ class ProgressBarCircle(
     private var mDy2 = 0f
 
     // Arc, Solid
-    private var mArcBlurWidth = 0 // Толщина размытия
-    private var mBlurStyle: Blur? = null // Стиль размытия
     private var mShaderArc: Shader? = null
     private var mRectArc = RectF()
     private var mAngleStart = 0f
@@ -98,10 +96,12 @@ class ProgressBarCircle(
 
     private var mArcGradientStyle = 0
     private var mProgressStyle = 0
-    private var mArcEndColor = 0       // Цвет прогресса End
-    private var mArcProgressWidth = 0f // Толщина линии прогресса
-    private var mArcGroundWidth = 0f   // Толщина фоновой дуги
-    private var mArcRoundShow = false  // Показать шапку
+    private var mArcEndColor = 0         // Цвет прогресса End
+    private var mArcProgressWidth = 0f   // Толщина линии прогресса
+    private var mArcGroundWidth = 0f     // Толщина фоновой дуги
+    private var mArcRoundShow = false    // Показать шапку
+    private var mArcBlurWidth = 0        // Толщина размытия
+    private var mBlurStyle: Blur? = null // Стиль размытия
 
     private var mWarningShow = false
     private var mWarningColor1 = 0
@@ -252,19 +252,14 @@ class ProgressBarCircle(
     // Штрихи Style dash
     private fun drawDash(canvas: Canvas) {
         val r = mDashRadius
-        val dA = 360 / mMax
-        var angle: Float
-
+        val angle = 360 / mMax
         canvas.save()
         for (i in 0..<mMax.toInt()) {
-            angle = i * dA
             if (i < mValue) mPaintDash.color = mProgressColor
             else if (mWarningShow) setWarningDash()
             else mPaintDash.color = mGroundColor
-            canvas.save()
-            canvas.rotate(angle, mCx, mCy)
             canvas.drawRoundRect(mDx1, mDy1, mDx2, mDy2, r, r, mPaintDash)
-            canvas.restore()
+            canvas.rotate(angle, mCx, mCy)
         }
         canvas.restore()
         setText()
